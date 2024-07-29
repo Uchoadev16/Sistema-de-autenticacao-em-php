@@ -14,10 +14,11 @@ if (isset($_GET['telefone'])) {
     <title>Document</title>
     <link rel="stylesheet" href="../../css/style.css">
     <style>
-        div#box{
+        div#box {
             height: 350px;
         }
-        button{
+
+        button {
             margin-top: 40px;
             margin-left: 60px;
         }
@@ -29,6 +30,8 @@ if (isset($_GET['telefone'])) {
         <div id="box">
             <h1>Crie sua nova senha</h1>
             <div id="form">
+
+                <!--Formmulário para recuperar a senha do usuário-->
                 <form action="../../controller/recuperarSenha/C_editSenha.php" method="post">
                     <label for="iNovaSenha">Nova senha:</label>
                     <input type="password" name="nNovaSenha" id="iNovaSenha"><br>
@@ -43,16 +46,20 @@ if (isset($_GET['telefone'])) {
             <a id="CL" href="../login/logar.php">Logar</a>
 
             <?php
+
+            /*Se existe uma GET['erroSenha] ele escreveuma mensagem de erro*/
             if (isset($_GET['erroSenha'])) {
 
                 echo "<p>As senhas não condizem!</p>";
             }
 
+            /*Se existe um GET['certo'] ele escreve uma resposta de sucesso*/
             if (isset($_GET['certo'])) {
 
                 echo "<p>Sua senha foi alterada com sucesso</p>";
             }
 
+            /*Se existe um GET['erro'] ele escreve uma mensagem de erro*/
             if (isset($_GET['erro'])) {
 
                 echo "<p>[ERRO] houve algum erro em sua recuperação de senha</p>";

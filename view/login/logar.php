@@ -21,8 +21,9 @@
     <div id="main">
         <div id="box">
             <h1>Logar:</h1>
-
             <div id="form">
+
+                <!--formulário para fazer o login do usuário-->
                 <form action="../../controller/login/C_login.php" method="post">
                     <label for="Email">E-mail:</label>
                     <input type="email" name="nEmail" id="iEmail"><br>
@@ -37,6 +38,7 @@
 
             <?php
 
+            /*Se existe um GET['ERRO'] ele manda escreve uma mensagem de erro*/
             if (isset($_GET['erro'])) {
 
                 echo "<p>[ERRO] conta não cadastrada!</p>";

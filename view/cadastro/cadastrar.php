@@ -14,6 +14,8 @@
         <div id="box">
             <h1>Cadastrar:</h1>
             <div id="form">
+
+                <!--Formulario para o cadastro-->
                 <form action="../../controller/cadastro/C_cadastro.php" method="post">
                     <label for="iNome">Nome:</label>
                     <input type="text" name="nNome" id="iNome" maxlength="50" required><br>
@@ -34,19 +36,21 @@
                 </form>
             </div>
 
-
             <?php
 
+            /*Se existe um GET['erro'] ele mostra uma mensagem de erro, mostrando que ja existe um nome, email e telefone cadastrados*/
             if (isset($_GET['erro'])) {
 
                 echo "<p>[ERRO] Nome, email ou telefone já cadastrado!<p>";
             }
 
+            /*Se existe um GET['erroSenha'] ele mostra uma mensagem de erro, mostrando que as senha não iguais */
             if (isset($_GET['erroSenha'])) {
 
                 echo "<p>[ERRO] senhas não correspondem!<p>";
             }
             ?>
+
             <a id="CL" href="../login/logar.php">Logar</a>
         </div>
         <p>&copy; UcHôA</p>

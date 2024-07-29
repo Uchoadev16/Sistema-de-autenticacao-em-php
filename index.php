@@ -13,6 +13,7 @@
         <div id="box">
             <h1>Bem-vindo a nossa Autenticação</h1><br>
 
+            <!--O usuario decide se vai fazer o cadastro ou o login-->
             <a href="view/login/logar.php">Logar</a><br><br>
             <a href="view/cadastro/cadastrar.php">Cadastrar</a>
         </div>

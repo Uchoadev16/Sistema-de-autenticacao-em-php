@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <h1>bem-vindo</h1><br>
 
-    <?php 
-    ?>
+<!--Conta do usuário-->
+    <h1>bem-vindo</h1><br>
 </body>
 </html>

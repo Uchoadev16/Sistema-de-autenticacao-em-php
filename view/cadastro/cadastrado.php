@@ -14,6 +14,7 @@
         <div id="box">
             <?php
 
+            /*Se existe um GET['resposta'] ele escreve a variavel resposta passada pelo get*/
             if (isset($_GET['resposta'])) {
 
                 $resposta = $_GET['resposta'];

@@ -22,6 +22,8 @@
 
             <h1>Insira o numero de telefone que você foi cadastrado:</h1>
             <div id="form">
+
+                <!--Formulário para enviar para o controller-->
                 <form action="../../controller/recuperarSenha/C_recuperar.php" method="post">
                     <label for="iTelefone">Telefone:</label>
                     <input type="tel" name="nTelefone" id="iTelefone"><br>
@@ -31,6 +33,7 @@
             </div>
             <?php
 
+            /*Se existe um GET['erro'] ele escreve um erro*/
             if (isset($_GET['erro'])) {
 
                 echo "<p>[ERRO]Número de telefone não cadastrado!</p>";
